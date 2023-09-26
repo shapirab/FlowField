@@ -6,16 +6,24 @@ export default class Player {
         }
         this.width = width;
         this.height = height;
-        this.velocity = 0;
+        this.velocity = {
+          x: 0,
+          y: 0  
+        };
         this.gravity = gravity;
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
     }
 
     update(){
+        this.position.y += this.velocity.y;
+        this.position.x += this.velocity.x;
+
         if(this.position.y <= this.canvasHeight - this.height){
-            this.position.y += this.velocity;
-            this.velocity += this.gravity;
+            this.velocity.y += this.gravity;
+        }
+        else{
+            this.velocity.y = 0;
         }
     }
 
