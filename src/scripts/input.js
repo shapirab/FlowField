@@ -1,8 +1,8 @@
-import Player from "./player.js";
+//import Player from "./player.js";
 
 export default class Input{
-    constructor(player){
-        this.player = player;
+    constructor(){
+        //this.player = player;
         this.keys = {
             right: {
                 pressed: false

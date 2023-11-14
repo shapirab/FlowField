@@ -8,3 +8,7 @@ body, html{
 canvas{
     background-color: black;
 }
+
+img{
+    display: none;
+}

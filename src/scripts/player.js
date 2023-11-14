@@ -25,6 +25,8 @@ export default class Player {
         else{
             this.velocity.y = 0;
         }
+
+        
     }
 
     draw(ctx){
